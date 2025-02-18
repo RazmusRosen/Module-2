@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <ul>
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="postPage.html">Posts</a></li>
+            <li><a href="contactPage.html" id="active" >Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <div>
+        <h1 id="contact-title">Contact Form</h1>
+       
+        <form class="contact-form">
+            <div id="form-grid">
+            <label for="" id="name-label">Name:</label>
+            <input type="text" name="name-input" id="name-input">
+            <span id="name-error"></span>
+            <label for="" id="email-label">Email:</label>
+            <input type="text" name="email-input" id="email-input">
+            <span id="email-error"></span>
+            <label for="" id="checkbox-label">Confirm to send</label>
+            <input type="checkbox" name="checkbox-input" id="checkbox-input">
+            <button type="submit" id="submit-button" disabled>Submit</button>
+        </div>
+        </form>
+    </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

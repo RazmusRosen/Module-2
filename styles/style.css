@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar li {
+    list-style-type: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 30px;
+}
+
+.nav-bar #active {
+    color: blue;
+}
+
+.nav-bar {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#form-grid {
+    display: grid;
+    grid-template-areas: 
+    "name-label my-name name-span"
+    "email-label my-email email-span"
+    "checkbox-label checkbox-input checkbox-input"
+    "submit-button submit-button submit-button";
+    margin-left: 20px;
+    grid-template-columns: max-content 200px auto;
+    align-items: end;
+    justify-content: center;
+}
+
+#contact-title {
+    margin-left: 20px;
+}
+
+#name-label {
+    grid-area: name-label;
+    margin-top: 20px;
+}
+
+#name-input {
+    grid-area: my-name;
+    margin-top: 20px;
+}
+
+#name-span {
+    grid-area: name-span;
+    margin-top: 20px;
+}
+
+#email-label {
+    grid-area: email-label;
+    margin-top: 20px;
+}
+
+#email-input {
+    grid-area: my-email;
+    margin-top: 20px;
+}
+
+#checkbox-label {
+    grid-area: checkbox-label;
+    margin-top: 20px;
+}
+
+#checkbox-input {    
+    margin-top: 20px;
+    height: 20px;
+}
+
+#submit-button {
+    grid-area: submit-button;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: not-allowed;
+}
+
+#name-error, #email-error {
+    color: red;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    justify-content: center;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    justify-self: center;
+    background-color: peachpuff;
+    border: 1px solid black;
+}
+
+article li {
+    list-style-type: none;
+}
+
+article img {
+    width: 20px;
+    height: 20px;
+}
+
+.post-user {
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+.post-user img {
+    height: 30px;
+    width: 30px;
+}
+
+.clickable-user:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.user-profile {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    width: min-content;
+    height: min-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.post-user {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
