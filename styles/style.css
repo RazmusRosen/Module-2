@@ -24,11 +24,11 @@ body {
 }
 
 .nav-bar #active {
-    color: blue;
+    color: #421507;
 }
 
 .nav-bar {
-    background-color: black;
+    background-color: #d29380;
     padding-top: 20px;
     padding-bottom: 20px;
 }
