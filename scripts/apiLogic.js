@@ -9,7 +9,7 @@ async function fetchPosts() {
         console.log(error, 'An error occured while fetching posts.');
     }
 }
-
+asdasdasdas
 function createPostUser(user) {
     let postUser = `<img src=${user.image} alt="User-profile picture."><a class="clickable-user" onclick="profileMenu(event)">${user.username}
         <div class="user-profile">
