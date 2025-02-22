@@ -24,11 +24,11 @@ body {
 }
 
 .nav-bar #active {
-    color: #421507;
+    color: #fb4108;
 }
 
 .nav-bar {
-    background-color: #d29380;
+    background-color: #83422e;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -120,6 +120,7 @@ article li {
 article img {
     width: 20px;
     height: 20px;
+    object-fit: contain;
 }
 
 .post-user {
@@ -148,6 +149,7 @@ article img {
     padding: 10px;
     border-radius: 10px;
 }
+
 .post-user {
     display: flex;
 }
