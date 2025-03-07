@@ -30,7 +30,7 @@ myForm[0].addEventListener('submit', function(e) {
     }
     else if (!nameRegex.test(userName.value) && !emailRegex.test(email.value)) {
         nameError.innerHTML = 'Please enter a valid name';
-        emailError.innerHTML = 'Please enter a valid email';
+        emailError.innerHTML = 'Please enter a valid email, e.g. test@test.se';
     }
     else if (emailRegex.test(email.value) && !nameRegex.test(userName.value)) {
         emailError.innerHTML = '';
@@ -38,7 +38,6 @@ myForm[0].addEventListener('submit', function(e) {
     }
     else if (nameRegex.test(userName.value) && !emailRegex.test(email.value)) {
         nameError.innerHTML = '';
-        emailError.innerHTML = 'Please enter a valid email';
+        emailError.innerHTML = 'Please enter a valid email, e.g. test@test.se';
     }
 });
-console.log('Script loaded');
