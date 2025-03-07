@@ -11,7 +11,6 @@ let commentsArray = [];
 const itemsPerPage = 5;
 
 const container = document.querySelector("main");
-const resultContainer = document.querySelector("section");
 
 function start(posts, users, comments) {
     if (isLoading) return;
