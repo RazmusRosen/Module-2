@@ -152,9 +152,12 @@ function createPostUser(user) {
 
     let userProfile = document.createElement('div');
     userProfile.classList.add('user-profile');
-    userProfile.innerHTML = `Name:${user.firstName} ${user.lastName}
-    Email:${user.email}
-    Gender:${user.gender}`;
+    let userInfo = document.createElement('pre')
+    userInfo.textContent = `Name: ${user.firstName} ${user.lastName}
+Email: ${user.email}
+Country: ${user.country}
+gender: ${user.gender}`;
+    userProfile.appendChild(userInfo);
 
     username.appendChild(img);
 

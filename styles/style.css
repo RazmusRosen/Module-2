@@ -54,11 +54,22 @@ body {
     padding-bottom: 20px;
 }
 
+#home-section {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+#home-section li {
+    margin-bottom: 20px;
+    gap:5px
+}
+
 #form-grid {
     display: grid;
     grid-template-areas: 
     "name-label my-name name-span"
-    "email-label my-email email-span"
+    "email-label my-email email-error"
     "checkbox-label checkbox-input checkbox-input"
     "submit-button submit-button submit-button";
     margin-left: 20px;
@@ -90,6 +101,11 @@ body {
 #email-input {
     grid-area: my-email;
     margin-top: 20px;
+}   
+
+#email-error {
+    grid-area: email-error;
+    width: max-content;
 }
 
 #checkbox-label {
@@ -97,9 +113,12 @@ body {
     margin-top: 20px;
 }
 
-#checkbox-input {    
+#checkbox-input {   
+    grid-area: checkbox-input; 
     margin-top: 20px;
     height: 20px;
+    width: 20px;
+    margin-left: 20px;
 }
 
 #submit-button {
@@ -116,7 +135,7 @@ body {
 
 section {
     display: grid;
-    grid-template-columns: repeat(1, 500px);
+    grid-template-columns: repeat(1, 330px);
     justify-content: center;
     gap: 20px;
 }
@@ -130,10 +149,14 @@ article {
     border: 1px solid black;
 }
 
+#back-to-top-image {
+    height: 50px;
+    width: 50px;
+}
+
 #back-to-top-button {
-    position: absolute;
-    top: 80vh;
-    right: 200px;
+    position: sticky;
+    top: 100px;
 }
 
 article li {
@@ -227,12 +250,26 @@ h1 {
 }
 
 main {
+    display: flex;
     height: 100vh;
+    justify-content: center;
     overflow-y: auto;
   }
+
+#home-page {
+    margin-top: 40px;
+    margin-bottom: 17px;
+    height: auto;
+}
 
 footer {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+@media (min-width: 520px) {
+    section {
+        grid-template-columns: repeat(1, 500px);
+    }
 }
