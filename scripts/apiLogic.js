@@ -112,7 +112,8 @@ function createCommentsObject(comments) {
             id: element.id,
             postId: element.postId,
             user: element.user,
-            body: element.body
+            body: element.body,
+            likes: element.likes
         }
         commentsObject.push(comment);
     });
@@ -245,15 +246,20 @@ function createComments(postId, comments, users) {
         let commentsArray = comments.filter(comment => comment.postId === postId);
         commentsArray.forEach(element => {
             let liElement = document.createElement('li');
+            liElement.classList.add("commentList");
             
-
             let user = getUser(element.user.id, users);
             let userComment = createPostUser(user);
             liElement.appendChild(userComment);
 
             let comment = document.createElement('p');
-            comment.classList.add('comment-text');
-            comment.textContent =": " + element.body;
+            comment.classList.add("comment")
+            comment.textContent = element.body + " - " + element.likes;
+            let likeImg = document.createElement('img');
+            likeImg.src = "thumpUp.gif";
+            likeImg.alt = "A picture of a thumps up to show likes.";
+            comment.appendChild(likeImg);
+
             liElement.appendChild(comment);
 
             fragment.appendChild(liElement);
